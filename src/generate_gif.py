@@ -40,8 +40,8 @@ def generate_himmelblau_gif(data_points_1, initial_point_1, data_points_2, initi
     newax.plot3D(data_points_2[0, 0], data_points_2[0, 1], result2[0],
                 ms = 2.5, c='black', marker='s')
     newax.set_axis_off()
-    sq = u'■'
-    cir = u'●'
+    cir = u'■'
+    sq = u'●'
     ax1.text2D(0.05, 0.95, f'Initilization\n'\
                         f'{sq}: x = {initial_point_1[0]}, y = {initial_point_1[1]}\n'\
                         f'{cir}: x = {initial_point_2[0]}, y = {initial_point_2[1]}', transform=ax1.transAxes)
@@ -99,7 +99,7 @@ def generate_himmelblau_gif(data_points_1, initial_point_1, data_points_2, initi
     # Plot surface
     ax.plot_surface(x, y, himmelblau([x,y]), **plot_args)
     ax.view_init(azim= 120, elev= 37)
-    ax.set_xlim3d([-6, 6])
+    ax.set_xlim3d([6, 6])
     ax.set_ylim3d([-6, 6])
     ax.set_zlim3d([0, 2000])
 
@@ -123,8 +123,8 @@ def generate_himmelblau_gif(data_points_1, initial_point_1, data_points_2, initi
     newax.set_axis_off()
 
     # Add some text to distinguish the two initialization points
-    sq = u'■'
-    cir = u'●'
+    cir = u'■'
+    sq = u'●'
     ax.text2D(0.05, 0.95, f'Initilization\n'\
                         f'{sq}: x = {initial_point_1[0]}, y = {initial_point_1[1]}\n'\
                         f'{cir}: x = {initial_point_2[0]}, y = {initial_point_2[1]}',  
@@ -181,8 +181,8 @@ def generate_rosenbrock_gif(data_points_1, initial_point_1, data_points_2, initi
     newax.plot3D(data_points_2[0, 0], data_points_2[0, 1], result2[0],
                 ms = 2.5, c='black', marker='s')
     newax.set_axis_off()
-    sq = u'■'
-    cir = u'●'
+    cir = u'■'
+    sq = u'●'
     ax1.text2D(0.05, 0.95, f'Initilization\n'\
                         f'{sq}: x = {initial_point_1[0]}, y = {initial_point_1[1]}\n'\
                         f'{cir}: x = {initial_point_2[0]}, y = {initial_point_2[1]}', transform=ax1.transAxes)
@@ -266,8 +266,8 @@ def generate_rosenbrock_gif(data_points_1, initial_point_1, data_points_2, initi
     newax.set_axis_off()
 
     # Add some text to distinguish the two initialization points
-    sq = u'■'
-    cir = u'●'
+    cir = u'■'
+    sq = u'●'
     ax.text2D(0.05, 0.95, f'Initilization\n'\
                         f'{sq}: x = {initial_point_1[0]}, y = {initial_point_1[1]}\n'\
                         f'{cir}: x = {initial_point_2[0]}, y = {initial_point_2[1]}', 
